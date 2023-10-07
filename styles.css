@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  /* キーボードの列数とキーの幅を調整 */
+  gap: 10px;
+}
+
+.key {
+  width: 60px;
+  /* キーの幅を調整 */
+  height: 60px;
+  /* キーの高さを調整 */
+  background-color: #c0c0c0;
+  /* まだ押されていないキーの色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.key.active {
+  background-color: #0070ff;
+  /* 1回以上押されたキーの色 */
+}
